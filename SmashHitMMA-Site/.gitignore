@@ -1,0 +1,19 @@
+# Build output
+bin/
+obj/
+
+# VS settings
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Logs
+*.log
+
+# Publish profiles
+Properties/PublishProfiles/
+
+# SQLite / local data (if any)
+App_Data/*.db
+App_Data/*.sqlite

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events | Smash Hit MMA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="Logo" /><span class="brand-text">Smash Hit <em>MMA</em></span></a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a class="active" href="events.html">Events</a></li>
+                    <li><a aria-disabled="true" href="#!" title="Coming soon">Coaches</a></li>
+                    <li><a aria-disabled="true" href="#!" title="Coming soon">Memberships</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li class="login-join"><a class="btn btn-primary" href="#!">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section events-header">
+        <div class="container events-header__inner">
+            <h1 class="events-title">Events <span>Calendar</span></h1>
+            <div class="events-controls" role="group" aria-label="Month navigation">
+                <button id="prevMonth" class="btn btn-ghost" type="button" aria-label="Previous month"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+                <div id="monthLabel" class="month-label" aria-live="polite" aria-atomic="true">Month YYYY</div>
+                <button id="nextMonth" class="btn btn-ghost" type="button" aria-label="Next month">Next <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div id="eventsGrid" class="events-grid" aria-live="polite" aria-busy="false"></div>
+            <p class="events-note">Hover a card to preview details. Click a card to register (link coming soon).</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <small>© <span id="year"></span> Smash Hit MMA. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

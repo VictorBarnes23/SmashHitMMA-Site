@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smash Hit MMA</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Smash Hit MMA Home">
+                <img src="assets/images/logo.png" alt="Smash Hit MMA logo" class="logo" />
+               
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a aria-disabled="true" href="#!" title="Coming soon">Coaches</a></li>
+                    <li><a aria-disabled="true" href="#!" title="Coming soon">Memberships</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="login-join">
+                        <a class="btn btn-primary" href="#!">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="section hero">
+        <div class="container">
+            <p class="pill">FREE Group Boxing, Kick-Boxing, Women’s Self-Defense • 11/15 & 11/16</p>
+
+            <!-- Accessible gradient headline via SVG (no CSS warnings) -->
+            <h1 class="hero-title">
+                <span class="sr-only">TRAIN HARD. HIT SMART.</span>
+                <svg class="gradient-heading" viewBox="0 0 1000 280" role="img" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="gh-grad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#e5383b" />
+                            <stop offset="78%" stop-color="#111111" />
+                        </linearGradient>
+                    </defs>
+                    <text x="0" y="120" font-family="'Bebas Neue', sans-serif" font-size="140" font-weight="800" fill="url(#gh-grad)" letter-spacing="2">TRAIN HARD.</text>
+                    <text x="0" y="250" font-family="'Bebas Neue', sans-serif" font-size="140" font-weight="800" fill="url(#gh-grad)" letter-spacing="2">HIT SMART.</text>
+                </svg>
+            </h1>
+
+            <p class="hero-sub">100% Beginner-Friendly • Start Your Fitness Journey</p>
+
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="programs.html">Explore Programs</a>
+                <a class="btn btn-ghost" href="events.html">Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+        <div class="container about-grid">
+            <div class="card">
+                <h2 class="h-title">Why Smash Hit MMA?</h2>
+                <p>We blend <strong>Boxing</strong> and <strong>Kick-Boxing</strong> with smart conditioning so you learn crisp technique, build confidence, and get results—no experience needed.</p>
+                <ul class="checks">
+                    <li><i class="fa-solid fa-check"></i> Structured beginner pathways</li>
+                    <li><i class="fa-solid fa-check"></i> Safe, coach-led progressions</li>
+                    <li><i class="fa-solid fa-check"></i> Community-first culture</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2 class="h-title">Programs & Coaching</h2>
+                <p>From fundamentals to advanced striking labs, our coaches guide stance, guard, footwork, combinations, timing, and ring IQ.</p>
+                <div class="tags">
+                    <span class="tag">🥊 Boxing</span>
+                    <span class="tag">🥋 Kick-Boxing</span>
+                    <span class="tag">🛡️ Women’s Self-Defense</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <h2 class="h-title">Ready to start?</h2>
+            <p>Pick a program, book your intro, and let’s get to work.</p>
+            <a class="btn btn-primary" href="programs.html">See Programs</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <small>© <span id="year"></span> Smash Hit MMA. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
